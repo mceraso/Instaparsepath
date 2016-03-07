@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		552153DA33503F0B5CD224DD /* Pods_Instaparsepath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06595D588124742636FFBEFA /* Pods_Instaparsepath.framework */; };
 		F990BACD1C8532BB0045592C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F990BACC1C8532BB0045592C /* AppDelegate.swift */; };
-		F990BACF1C8532BB0045592C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F990BACE1C8532BB0045592C /* ViewController.swift */; };
 		F990BAD21C8532BB0045592C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F990BAD01C8532BB0045592C /* Main.storyboard */; };
 		F990BAD41C8532BB0045592C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F990BAD31C8532BB0045592C /* Assets.xcassets */; };
 		F990BAD71C8532BB0045592C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F990BAD51C8532BB0045592C /* LaunchScreen.storyboard */; };
@@ -17,6 +16,7 @@
 		F9AE51821C8D5C220057EDA4 /* PhotoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */; };
 		F9AE51841C8D65080057EDA4 /* PhotoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */; };
 		F9AE51861C8D6CD10057EDA4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */; };
+		F9AE51891C8E267F0057EDA4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51881C8E267F0057EDA4 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		9B0EF2220F7A166A33EEB5E4 /* Pods-Instaparsepath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instaparsepath.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instaparsepath/Pods-Instaparsepath.release.xcconfig"; sourceTree = "<group>"; };
 		F990BAC91C8532BA0045592C /* Instaparsepath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaparsepath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F990BACC1C8532BB0045592C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F990BACE1C8532BB0045592C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F990BAD11C8532BB0045592C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F990BAD31C8532BB0045592C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F990BAD61C8532BB0045592C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewController.swift; sourceTree = "<group>"; };
 		F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedCell.swift; sourceTree = "<group>"; };
 		F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		F9AE51881C8E267F0057EDA4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +86,13 @@
 		F990BACB1C8532BB0045592C /* Instaparsepath */ = {
 			isa = PBXGroup;
 			children = (
-				F990BACC1C8532BB0045592C /* AppDelegate.swift */,
-				F990BAD01C8532BB0045592C /* Main.storyboard */,
-				F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */,
+				F9AE51871C8E264A0057EDA4 /* Methods */,
 				F990BAE01C853B2B0045592C /* ViewControllers */,
+				F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */,
+				F990BACC1C8532BB0045592C /* AppDelegate.swift */,
 				F990BAD31C8532BB0045592C /* Assets.xcassets */,
 				F990BAD51C8532BB0045592C /* LaunchScreen.storyboard */,
+				F990BAD01C8532BB0045592C /* Main.storyboard */,
 				F990BAD81C8532BB0045592C /* Info.plist */,
 			);
 			path = Instaparsepath;
@@ -100,12 +101,19 @@
 		F990BAE01C853B2B0045592C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F990BACE1C8532BB0045592C /* ViewController.swift */,
 				F990BADE1C853B100045592C /* LoginViewController.swift */,
 				F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */,
 				F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9AE51871C8E264A0057EDA4 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				F9AE51881C8E267F0057EDA4 /* Post.swift */,
+			);
+			name = Methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +242,8 @@
 				F9AE51861C8D6CD10057EDA4 /* PostViewController.swift in Sources */,
 				F990BADF1C853B100045592C /* LoginViewController.swift in Sources */,
 				F9AE51841C8D65080057EDA4 /* PhotoFeedCell.swift in Sources */,
+				F9AE51891C8E267F0057EDA4 /* Post.swift in Sources */,
 				F9AE51821C8D5C220057EDA4 /* PhotoFeedViewController.swift in Sources */,
-				F990BACF1C8532BB0045592C /* ViewController.swift in Sources */,
 				F990BACD1C8532BB0045592C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

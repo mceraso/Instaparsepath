@@ -36,6 +36,10 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func onSignUp(sender: AnyObject) {
+        if usernameField.text == "" {
+            print("You need to write something!")
+        } else {
+        
         let newUser = PFUser()
         
         newUser.username = usernameField.text
@@ -51,6 +55,7 @@ class LoginViewController: UIViewController {
                     print("User name taken")
                 }
             }
+        }
         }
     }
     /*
