@@ -13,7 +13,7 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://salty-tundra-61805.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.currentUser() != nil {
+            self.window?.rootViewController = storyboard.instantiateViewControllerWithIdentifier("NavigationController");
+        }
         return true
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class PhotoFeedViewController: UIViewController {
 
@@ -21,6 +22,13 @@ class PhotoFeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLogout(sender: AnyObject) {
+        PFUser.logOut()
+        let LoginViewController = storyboard!.instantiateViewControllerWithIdentifier("LoginViewController");
+        self.presentViewController(LoginViewController, animated:true, completion:nil);
+        print("You're logged out!")
+        
+    }
 
     /*
     // MARK: - Navigation
