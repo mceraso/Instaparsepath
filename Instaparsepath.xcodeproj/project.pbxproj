@@ -14,6 +14,9 @@
 		F990BAD41C8532BB0045592C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F990BAD31C8532BB0045592C /* Assets.xcassets */; };
 		F990BAD71C8532BB0045592C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F990BAD51C8532BB0045592C /* LaunchScreen.storyboard */; };
 		F990BADF1C853B100045592C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F990BADE1C853B100045592C /* LoginViewController.swift */; };
+		F9AE51821C8D5C220057EDA4 /* PhotoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */; };
+		F9AE51841C8D65080057EDA4 /* PhotoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */; };
+		F9AE51861C8D6CD10057EDA4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F990BAD61C8532BB0045592C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F990BAD81C8532BB0045592C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F990BADE1C853B100045592C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewController.swift; sourceTree = "<group>"; };
+		F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedCell.swift; sourceTree = "<group>"; };
+		F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			children = (
 				F990BACC1C8532BB0045592C /* AppDelegate.swift */,
 				F990BAD01C8532BB0045592C /* Main.storyboard */,
+				F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */,
 				F990BAE01C853B2B0045592C /* ViewControllers */,
 				F990BAD31C8532BB0045592C /* Assets.xcassets */,
 				F990BAD51C8532BB0045592C /* LaunchScreen.storyboard */,
@@ -95,6 +102,8 @@
 			children = (
 				F990BACE1C8532BB0045592C /* ViewController.swift */,
 				F990BADE1C853B100045592C /* LoginViewController.swift */,
+				F9AE51811C8D5C220057EDA4 /* PhotoFeedViewController.swift */,
+				F9AE51851C8D6CD10057EDA4 /* PostViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -222,7 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AE51861C8D6CD10057EDA4 /* PostViewController.swift in Sources */,
 				F990BADF1C853B100045592C /* LoginViewController.swift in Sources */,
+				F9AE51841C8D65080057EDA4 /* PhotoFeedCell.swift in Sources */,
+				F9AE51821C8D5C220057EDA4 /* PhotoFeedViewController.swift in Sources */,
 				F990BACF1C8532BB0045592C /* ViewController.swift in Sources */,
 				F990BACD1C8532BB0045592C /* AppDelegate.swift in Sources */,
 			);
