@@ -74,8 +74,8 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         let caption = photo["caption"] as! String
         cell.captionLabel.text = caption
         
-     //   cell.photoImageView.file = photo["media"] as? PFFile
-     //   cell.photoImageView.loadInBackground()
+        cell.photoImageView.file = photo["media"] as? PFFile
+        cell.photoImageView.loadInBackground()
         
         return cell
         

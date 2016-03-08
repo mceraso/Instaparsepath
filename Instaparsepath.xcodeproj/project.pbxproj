@@ -88,7 +88,6 @@
 			children = (
 				F9AE51871C8E264A0057EDA4 /* Methods */,
 				F990BAE01C853B2B0045592C /* ViewControllers */,
-				F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */,
 				F990BACC1C8532BB0045592C /* AppDelegate.swift */,
 				F990BAD31C8532BB0045592C /* Assets.xcassets */,
 				F990BAD51C8532BB0045592C /* LaunchScreen.storyboard */,
@@ -111,6 +110,7 @@
 		F9AE51871C8E264A0057EDA4 /* Methods */ = {
 			isa = PBXGroup;
 			children = (
+				F9AE51831C8D65080057EDA4 /* PhotoFeedCell.swift */,
 				F9AE51881C8E267F0057EDA4 /* Post.swift */,
 			);
 			name = Methods;
